@@ -1,92 +1,345 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Coachly — Running Coaching</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<nav><div class="wrap">
-<a class="logo" href="#home" data-go="home">Coach<span>ly</span></a>
-<div class="links" id="links">
-<a href="#home" data-go="home">Home</a><a href="#about" data-go="about">About</a><a href="#programs" data-go="programs">Coaching Programs</a><a href="#pos" data-go="pos">POS/Shop</a><a href="#contact" data-go="contact">Contact</a>
-</div>
-<a class="btn sm cta" href="#pos" data-go="pos">Start Booking</a>
-<button class="ib" id="cartBtn" aria-label="Open cart">🛒<span class="badge" id="cnt">0</span></button>
-<button class="ib" id="theme" aria-label="Toggle theme">🌙</button>
-<button class="ib" id="burger" aria-label="Menu">☰</button>
-</div></nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Coachly — Running Coaching</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="#home" data-go="home">Coach<span>ly</span></a>
+        <div class="links" id="links">
+          <a href="#home" data-go="home">Home</a
+          ><a href="#about" data-go="about">About</a
+          ><a href="#programs" data-go="programs">Coaching Programs</a
+          ><a href="#pos" data-go="pos">POS/Shop</a
+          ><a href="#contact" data-go="contact">Contact</a>
+        </div>
+        <a class="btn sm cta" href="#pos" data-go="pos">Start Booking</a>
+        <button class="ib" id="cartBtn" aria-label="Open cart">
+          🛒<span class="badge" id="cnt">0</span>
+        </button>
+        <button class="ib" id="theme" aria-label="Toggle theme">🌙</button>
+        <button class="ib" id="burger" aria-label="Menu">☰</button>
+      </div>
+    </nav>
 
-<header class="hero" id="home"><div class="wrap">
-<div><h1>Train Smarter.<br>Run Stronger.</h1>
-<p>Choose the right coaching program, build your training plan, and start working toward your next running goal.</p>
-<div class="row"><a class="btn" href="#programs" data-go="programs">Explore Coaching Programs</a><a class="btn ghost" href="#pos" data-go="pos">Start Your Order</a></div>
-<div class="stats"><div><b>4</b>Coaching programs</div><div><b>4–8</b>Weeks per plan</div><div><b>1-on-1</b>Coach feedback</div></div></div>
-<svg class="runner" viewBox="0 0 260 260" fill="none" aria-label="Runner in motion"><circle cx="140" cy="130" r="112" fill="rgba(255,255,255,.1)"/><circle cx="140" cy="130" r="78" fill="rgba(255,255,255,.12)"/><g stroke="#fff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"><circle cx="152" cy="58" r="16" fill="#fff" stroke="none"/><path d="M142 90L120 138"/><path d="M120 138L152 158L160 198"/><path d="M120 138L96 166L64 172"/><path d="M140 98L172 116L188 98"/><path d="M140 98L112 114L90 100"/></g><g stroke="#22C55E" stroke-width="6" stroke-linecap="round"><path d="M14 88h44M6 118h52M22 148h36"/></g><path d="M36 216h210" stroke="#22C55E" stroke-width="8" stroke-linecap="round"/></svg>
-</div></header>
+    <header class="hero" id="home">
+      <div class="wrap">
+        <div>
+          <h1>Train Smarter.<br />Run Stronger.</h1>
+          <p>
+            Choose the right coaching program, build your training plan, and
+            start working toward your next running goal.
+          </p>
+          <div class="row">
+            <a class="btn" href="#programs" data-go="programs"
+              >Explore Coaching Programs</a
+            ><a class="btn ghost" href="#pos" data-go="pos">Start Your Order</a>
+          </div>
+          <div class="stats">
+            <div><b>4</b>Coaching programs</div>
+            <div><b>4–8</b>Weeks per plan</div>
+            <div><b>1-on-1</b>Coach feedback</div>
+          </div>
+        </div>
+        <svg
+          class="runner"
+          viewBox="0 0 260 260"
+          fill="none"
+          aria-label="Runner in motion"
+        >
+          <circle cx="140" cy="130" r="112" fill="rgba(255,255,255,.1)" />
+          <circle cx="140" cy="130" r="78" fill="rgba(255,255,255,.12)" />
+          <g
+            stroke="#fff"
+            stroke-width="13"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="152" cy="58" r="16" fill="#fff" stroke="none" />
+            <path d="M142 90L120 138" />
+            <path d="M120 138L152 158L160 198" />
+            <path d="M120 138L96 166L64 172" />
+            <path d="M140 98L172 116L188 98" />
+            <path d="M140 98L112 114L90 100" />
+          </g>
+          <g stroke="#22C55E" stroke-width="6" stroke-linecap="round">
+            <path d="M14 88h44M6 118h52M22 148h36" />
+          </g>
+          <path
+            d="M36 216h210"
+            stroke="#22C55E"
+            stroke-width="8"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+    </header>
 
-<section id="about"><div class="wrap grid two">
-<div><h2>About Coachly</h2>
-<p>Coachly is a running coaching service designed to help runners train with more structure and confidence. Customers can choose a coaching package based on their running experience and goals.</p>
-<p>The website combines a coaching portfolio with a front-end POS system, allowing coaching services to be presented as purchasable products.</p>
-<div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
-<div class="card" style="padding:14px">🎯 Personalized training</div><div class="card" style="padding:14px">📈 Consistent progress</div><div class="card" style="padding:14px">🏁 Race preparation</div><div class="card" style="padding:14px">⚡ Performance improvement</div><div class="card" style="padding:14px">🤝 Supportive coaching</div><div class="card" style="padding:14px">⏱️ Performance tracking</div></div></div>
-<div class="card" id="bars"><h3>Where we focus your training</h3>
-<div class="bar"><div class="t"><span>Endurance</span><span>90%</span></div><div class="tr"><div class="f" data-w="90"></div></div></div>
-<div class="bar"><div class="t"><span>Pacing &amp; speed</span><span>85%</span></div><div class="tr"><div class="f" data-w="85"></div></div></div>
-<div class="bar"><div class="t"><span>Consistency</span><span>95%</span></div><div class="tr"><div class="f" data-w="95"></div></div></div>
-<div class="bar"><div class="t"><span>Race strategy</span><span>80%</span></div><div class="tr"><div class="f" data-w="80"></div></div></div></div>
-</div></section>
+    <section id="about">
+      <div class="wrap grid two">
+        <div>
+          <h2>About Coachly</h2>
+          <p>
+            Coachly is a running coaching service designed to help runners train
+            with more structure and confidence. Customers can choose a coaching
+            package based on their running experience and goals.
+          </p>
+          <p>
+            The website combines a coaching portfolio with a front-end POS
+            system, allowing coaching services to be presented as purchasable
+            products.
+          </p>
+          <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px">
+            <div class="card" style="padding: 14px">
+              🎯 Personalized training
+            </div>
+            <div class="card" style="padding: 14px">📈 Consistent progress</div>
+            <div class="card" style="padding: 14px">🏁 Race preparation</div>
+            <div class="card" style="padding: 14px">
+              ⚡ Performance improvement
+            </div>
+            <div class="card" style="padding: 14px">🤝 Supportive coaching</div>
+            <div class="card" style="padding: 14px">
+              ⏱️ Performance tracking
+            </div>
+          </div>
+        </div>
+        <div class="card" id="bars">
+          <h3>Where we focus your training</h3>
+          <div class="bar">
+            <div class="t"><span>Endurance</span><span>90%</span></div>
+            <div class="tr"><div class="f" data-w="90"></div></div>
+          </div>
+          <div class="bar">
+            <div class="t"><span>Pacing &amp; speed</span><span>85%</span></div>
+            <div class="tr"><div class="f" data-w="85"></div></div>
+          </div>
+          <div class="bar">
+            <div class="t"><span>Consistency</span><span>95%</span></div>
+            <div class="tr"><div class="f" data-w="95"></div></div>
+          </div>
+          <div class="bar">
+            <div class="t"><span>Race strategy</span><span>80%</span></div>
+            <div class="tr"><div class="f" data-w="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="services" style="background:var(--sur)"><div class="wrap"><h2>Our Coaching Services</h2><div class="grid cols4" id="svc"></div></div></section>
+    <section id="services" style="background: var(--sur)">
+      <div class="wrap">
+        <h2>Our Coaching Services</h2>
+        <div class="grid cols4" id="svc"></div>
+      </div>
+    </section>
 
-<section id="programs"><div class="wrap"><h2>Coaching Program Catalog</h2>
-<p class="sub">Search or filter by category, then add a program to your order.</p><br>
-<div class="grid shop" id="pos">
-<div><div class="tools"><input id="q" type="search" placeholder="Search coaching programs…" aria-label="Search"><select id="cat" aria-label="Category"><option value="">All Categories</option><option>Beginner</option><option>Race Preparation</option><option>Personalized Coaching</option></select></div>
-<div class="grid pgrid" id="pg"></div></div>
-<aside class="card" id="cart"><h3>Current Order 🛒 <span id="cnt2">0</span></h3><div id="items"></div>
-<div class="sum"><div><span>Subtotal</span><span id="sub">Rp0</span></div><div><span>Discount</span><span>Rp0</span></div><div class="tot"><span>Total</span><span id="tot">Rp0</span></div></div>
-<div class="stack"><button class="btn" id="chk">Proceed to Checkout</button><button class="btn ghost" id="cont">Continue Shopping</button><button class="btn ghost" id="clr" style="color:#EF4444;border-color:#EF4444">Clear Cart</button></div></aside>
-</div></div></section>
+    <section id="programs">
+      <div class="wrap">
+        <h2>Coaching Program Catalog</h2>
+        <p class="sub">
+          Search or filter by category, then add a program to your order.
+        </p>
+        <br />
+        <div class="grid shop" id="pos">
+          <div>
+            <div class="tools">
+              <input
+                id="q"
+                type="search"
+                placeholder="Search coaching programs…"
+                aria-label="Search"
+              /><select id="cat" aria-label="Category">
+                <option value="">All Categories</option>
+                <option>Beginner</option>
+                <option>Race Preparation</option>
+                <option>Personalized Coaching</option>
+              </select>
+            </div>
+            <div class="grid pgrid" id="pg"></div>
+          </div>
+          <aside class="card" id="cart">
+            <h3>Current Order 🛒 <span id="cnt2">0</span></h3>
+            <div id="items"></div>
+            <div class="sum">
+              <div><span>Subtotal</span><span id="sub">Rp0</span></div>
+              <div><span>Discount</span><span>Rp0</span></div>
+              <div class="tot"><span>Total</span><span id="tot">Rp0</span></div>
+            </div>
+            <div class="stack">
+              <button class="btn" id="chk">Proceed to Checkout</button
+              ><button class="btn ghost" id="cont">Continue Shopping</button
+              ><button
+                class="btn ghost"
+                id="clr"
+                style="color: #ef4444; border-color: #ef4444"
+              >
+                Clear Cart
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-<section style="background:var(--sur)"><div class="wrap"><h2>What Runners Say</h2><div class="grid cols4">
-<div class="card"><div class="stars">★★★★★</div><p>“Coachly made it much easier for me to stay consistent with my running.”</p><div style="display:flex;gap:10px;align-items:center"><div class="av">A</div><small>Goal: First 5K</small></div></div>
-<div class="card"><div class="stars">★★★★★</div><p>“The training structure helped me understand exactly what I needed to focus on.”</p><div style="display:flex;gap:10px;align-items:center"><div class="av">R</div><small>Goal: Sub-55 10K</small></div></div>
-<div class="card"><div class="stars">★★★★★</div><p>“I felt more confident and prepared when approaching race day.”</p><div style="display:flex;gap:10px;align-items:center"><div class="av">M</div><small>Goal: Half Marathon</small></div></div></div>
-<p class="meta">Sample testimonials for an academic project.</p></div></section>
+    <section style="background: var(--sur)">
+      <div class="wrap">
+        <h2>What Runners Say</h2>
+        <div class="grid cols4">
+          <div class="card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Coachly made it much easier for me to stay consistent with my
+              running.”
+            </p>
+            <div style="display: flex; gap: 10px; align-items: center">
+              <div class="av">A</div>
+              <small>Goal: First 5K</small>
+            </div>
+          </div>
+          <div class="card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “The training structure helped me understand exactly what I needed
+              to focus on.”
+            </p>
+            <div style="display: flex; gap: 10px; align-items: center">
+              <div class="av">R</div>
+              <small>Goal: Sub-55 10K</small>
+            </div>
+          </div>
+          <div class="card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “I felt more confident and prepared when approaching race day.”
+            </p>
+            <div style="display: flex; gap: 10px; align-items: center">
+              <div class="av">M</div>
+              <small>Goal: Half Marathon</small>
+            </div>
+          </div>
+        </div>
+        <p class="meta">Sample testimonials for an academic project.</p>
+      </div>
+    </section>
 
-<section id="contact"><div class="wrap grid two">
-<div><h2>Need Help Choosing a Program?</h2><p class="sub">Tell us about your running experience and goals, and we’ll help you choose the right coaching package.</p></div>
-<form class="card" id="cf" novalidate>
-<div><input id="fn" placeholder="Full Name" required><div class="err"></div></div>
-<div><input id="em" type="email" placeholder="Email Address" required><div class="err"></div></div>
-<div><select id="ex" required><option value="">Running Experience</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select><div class="err"></div></div>
-<div><input id="tr" placeholder="Target Race / Distance (e.g. 10K)" required><div class="err"></div></div>
-<div><textarea id="ms" rows="4" placeholder="Message" required></textarea><div class="err"></div></div>
-<button class="btn" type="submit">Ask the Coach</button></form></div></section>
+    <section id="contact">
+      <div class="wrap grid two">
+        <div>
+          <h2>Need Help Choosing a Program?</h2>
+          <p class="sub">
+            Tell us about your running experience and goals, and we’ll help you
+            choose the right coaching package.
+          </p>
+        </div>
+        <form class="card" id="cf" novalidate>
+          <div>
+            <input id="fn" placeholder="Full Name" required />
+            <div class="err"></div>
+          </div>
+          <div>
+            <input id="em" type="email" placeholder="Email Address" required />
+            <div class="err"></div>
+          </div>
+          <div>
+            <select id="ex" required>
+              <option value="">Running Experience</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+            <div class="err"></div>
+          </div>
+          <div>
+            <input
+              id="tr"
+              placeholder="Target Race / Distance (e.g. 10K)"
+              required
+            />
+            <div class="err"></div>
+          </div>
+          <div>
+            <textarea
+              id="ms"
+              rows="4"
+              placeholder="Message"
+              required
+            ></textarea>
+            <div class="err"></div>
+          </div>
+          <button class="btn" type="submit">Ask the Coach</button>
+        </form>
+      </div>
+    </section>
 
-<footer><div class="wrap grid">
-<div><h3 style="color:#fff">Coachly — Running Coaching</h3><p>Train Smarter. Run Stronger.</p></div>
-<div><b>Quick Links</b><a href="#home" data-go="home">Home</a><a href="#about" data-go="about">About</a><a href="#programs" data-go="programs">Coaching Programs</a><a href="#pos" data-go="pos">POS / Shop</a><a href="#contact" data-go="contact">Contact</a></div>
-<div><b>Social</b><a href="#">Instagram</a><a href="#">Strava</a><a href="#">TikTok</a></div></div>
-<div class="wrap"><p style="text-align:center;margin-top:32px;font-size:.85rem">© 2026 Coachly Running Coaching. All Rights Reserved.</p></div></footer>
-<button id="top" aria-label="Back to top">↑</button>
+    <footer>
+      <div class="wrap grid">
+        <div>
+          <h3 style="color: #fff">Coachly — Running Coaching</h3>
+          <p>Train Smarter. Run Stronger.</p>
+        </div>
+        <div>
+          <b>Quick Links</b><a href="#home" data-go="home">Home</a
+          ><a href="#about" data-go="about">About</a
+          ><a href="#programs" data-go="programs">Coaching Programs</a
+          ><a href="#pos" data-go="pos">POS / Shop</a
+          ><a href="#contact" data-go="contact">Contact</a>
+        </div>
+        <div>
+          <b>Social</b><a href="#">Instagram</a><a href="#">Strava</a
+          ><a href="#">TikTok</a>
+        </div>
+      </div>
+      <div class="wrap">
+        <p style="text-align: center; margin-top: 32px; font-size: 0.85rem">
+          © 2026 Coachly Running Coaching. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <button id="top" aria-label="Back to top">↑</button>
 
-<div class="ov" id="detail"><div class="md" id="dbody"></div></div>
-<div class="ov" id="checkout"><div class="md">
-<h3>Checkout</h3><div id="osum"></div>
-<b>Payment Method</b>
-<label class="pay"><input type="radio" name="pm" value="Cash"> 💵 Cash</label>
-<label class="pay"><input type="radio" name="pm" value="Card"> 💳 Card</label>
-<label class="pay"><input type="radio" name="pm" value="Digital Wallet"> 📱 Digital Wallet</label>
-<label style="display:block;margin-top:10px;font-size:.9rem">Payment amount (Rp)<input id="amt" type="number" min="0" placeholder="Enter amount"></label>
-<div id="pstat"></div>
-<div class="stack" style="margin-top:12px"><button class="btn green" id="cfm">Confirm Payment</button><button class="btn ghost" id="cxl">Cancel</button></div></div></div>
-<div class="ov" id="receipt"><div class="md rc" id="rbody"></div></div>
+    <div class="ov" id="detail"><div class="md" id="dbody"></div></div>
+    <div class="ov" id="checkout">
+      <div class="md">
+        <h3>Checkout</h3>
+        <div id="osum"></div>
+        <b>Payment Method</b>
+        <label class="pay"
+          ><input type="radio" name="pm" value="Cash" /> 💵 Cash</label
+        >
+        <label class="pay"
+          ><input type="radio" name="pm" value="Card" /> 💳 Card</label
+        >
+        <label class="pay"
+          ><input type="radio" name="pm" value="Digital Wallet" /> 📱 Digital
+          Wallet</label
+        >
+        <label style="display: block; margin-top: 10px; font-size: 0.9rem"
+          >Payment amount (Rp)<input
+            id="amt"
+            type="number"
+            min="0"
+            placeholder="Enter amount"
+        /></label>
+        <div id="pstat"></div>
+        <div class="stack" style="margin-top: 12px">
+          <button class="btn green" id="cfm">Confirm Payment</button
+          ><button class="btn ghost" id="cxl">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div class="ov" id="receipt"><div class="md rc" id="rbody"></div></div>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
